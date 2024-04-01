@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: rgb(255, 202, 176,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title
+{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+#container
+{
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+   
+}
+#container button
+{
+    font-size: 7rem;
+    border-radius: 50%;
+    border:2px solid transparent;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: border 0.3s ease-in;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+#container button:hover
+{
+    border:2px solid red;
+}
+#btns
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.leftsection
+{
+    font-size: 1.3rem;
+}
+.rightsection
+{
+    font-size: 1.5rem;
+}
+#finalresult
+{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.greentext,#playerscore
+{
+    color:hsl(120, 100%, 30%)
+}
+.redtext,#computerscore
+{
+    color:hsl(0, 100%, 50%);
+}
+
+@media (max-width: 768px) {
+    #container {
+        padding: 10px;
+    }
+    
+    #container button {
+        font-size: 2.5rem;
+        padding: 8px;
+        margin: 0 35px;
+    }
+
+    .leftsection {
+        font-size: 1.1rem;
+    }
+
+    .rightsection {
+        font-size: 1.3rem;
+    }
+
+    #finalresult {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 5px;
+    }
+    
+    #container button {
+        font-size: 2rem;
+        padding: 5px;
+        margin: 0 20px;
+    }
+    #btns
+    {
+        padding: 10px;
+    }
+
+    .leftsection {
+        font-size: 0.9rem;
+        padding-left: 0px;
+        
+    }
+
+    .rightsection {
+        font-size: 0.9rem;
+    }
+
+    #finalresult {
+        font-size: 2rem;
+    }
+}
